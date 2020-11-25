@@ -1,0 +1,82 @@
+body {
+    background-color: white;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#color {
+    border-radius: 50px;
+    transition: background-color 0.5s ease;
+    margin-top: 30px;
+    width: 100px;
+    height: 100px;
+    background-color: #6441A4;
+    float: left;
+    position: relative;
+    left: -50%;
+}
+
+#color-container {
+    float: left;
+    position: relative;
+    left: 50%;
+}
+
+.board {
+  position: relative;
+
+  margin: 220px;
+  width: 200px;
+  height: 200px;
+}
+
+.theboard{
+  position: relative;
+  background-image: url('chessboard.png');
+}
+
+.topLeft {
+  position: absolute;
+  top: -100%;
+  left: -100%;
+
+  width: 200px;
+  height: 200px;
+
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.topRight {
+  position: absolute;
+  top: -100%;
+  left: 0%;
+
+  width: 200px;
+  height: 200px;
+
+  border-bottom: 1px solid black;
+}
+
+.bottomLeft {
+  position: absolute;
+  top: 0%;
+  left: -100%;
+
+  width: 200px;
+  height: 200px;
+
+  border-right: 1px solid black;
+}
+
+.piece {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+
+  border-radius: 50%;
+
+  width: 5px;
+  height: 5px;
+
+  background: blue;
+}
